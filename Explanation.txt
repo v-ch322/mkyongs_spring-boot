@@ -1,7 +1,7 @@
 The initial data data were taken from:
 https://github.com/mkyong/docker-java/docker-spring-boot
 The sample was prepared by Yong Mook Kim.
-They seem interesting for the some modification since the operation sequence
+These data seem interesting for the some modification since the operation sequence
 ***
 $ git clone https://github.com/mkyong/docker-java
 $ cd docker-spring-boot
@@ -11,10 +11,10 @@ $ java -jar target/spring-boot-web.jar
 docker build -t spring-boot:1.0 .
 docker run -d -p 8080:8080 -t spring-boot:1.0
 ***
-where one should have installed openjdk (maven) in its own PC
+where one should have installed openjdk (maven) for preparation of initial file in its own PC
 could be simplified using typical for java docker multistage build.
 
-The data of mkyong were unchanged, I changed only Dockerfile and added docker-compose.yml.
+The data of mkyong were unchanged, I changed only Dockerfile and added the simplest docker-compose.yml.
 After the cloning the repo container can be obtained by:
 cd mkyongs_spring-boot
 docker-compose up -d
